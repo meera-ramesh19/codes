@@ -1,0 +1,96 @@
+
+L1: Bartender, drinks!
+
+Complete the function that receives as input a string, and produces outputs according to the following table:
+
+Input	Output
+"Jabroni"	"Patron Tequila"
+"School Counselor"	"Anything with Alcohol"
+"Programmer"	"Hipster Craft Beer"
+"Bike Gang Member"	"Moonshine"
+"Politician"	"Your tax dollars"
+"Rapper"	"Cristal"
+anything else	"Beer"
+Note: anything else is the default case: if the input to the function is not any of the values in the table, then the return value should be "Beer".
+
+Make sure you cover the cases where certain words do not show up with correct capitalization. For example, the input "pOLitiCIaN" should still return "Your tax dollars".
+
+FUNDAMENTALSCONDITIONAL STATEMENTSCONTROL FLOWBASIC LANGUAGE FEATURESSTRINGS
+
+
+
+
+function getDrinkByProfession(param){
+ param=param.toLowerCase()
+   switch(param){
+       
+        
+        case 'jabroni':
+        
+    
+            return 'Patron Tequila';
+       break;
+       case 'scHOOl counselor':
+       
+       case 'Anything with Alcohol':
+      
+       case 'School Counselor':
+        
+       case 'SCHOOL COUNSELOR':
+       
+       case  'school counselor':
+           return 'Anything with Alcohol';
+         break;
+       case 'prOgramMer' :
+      
+       case 'PROGRAMMER':
+      
+       case 'Programmer':
+     
+       case 'programmer':
+      
+       case 'Hipster Craft Beer':
+          return 'Hipster Craft Beer';
+       break;
+       case 'Bike Gang Member':
+    
+       case 'bike gang member':
+       
+       case 'bike ganG member':
+       
+       case 'Moonshine':
+         return 'Moonshine';
+       break;
+      case 'Politician':
+        
+       case 'poLiTiCian':
+       
+       case 'politician':
+       
+       case 'POLITICIAN':
+         
+       case 'Your tax dollars':
+           return 'Your tax dollars';
+          break;
+       case 'Rapper':
+        
+       case 'RAPPER':
+      
+       case 'rapper':
+       
+       case 'Cristal':
+           return 'Cristal';
+        break;
+       case 'Pundit':
+       
+       case 'pundit':
+      
+       case 'Beer':
+             return 'Beer';
+        break;
+       default:
+          return 'Beer';
+       break;
+       }
+ 
+}
