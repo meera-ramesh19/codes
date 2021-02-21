@@ -1,3 +1,3 @@
 # codewars
 
-Solving problems in codewars 
+Solved problems in codewars  challenges
