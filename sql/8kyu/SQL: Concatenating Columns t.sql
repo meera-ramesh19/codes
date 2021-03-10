@@ -31,4 +31,4 @@ Don't forget to add spaces.
 
 
 
-select concat(prefix,' ',first,' ',last,' ',prefix) as title from names
+select concat(prefix,' ',first,' ',last,' ',suffix) as title from names
