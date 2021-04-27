@@ -11,9 +11,9 @@ The input string will only consist of lower case letters and/or spaces.
 FUNDAMENTALSSTRINGSUTILITIES
 
 
-
-
-
+function getCount(str) {
+return str.split('').filter(x=>'AEIOUaeiou.includes(x)).length
+}
 
 function getCount(str) {
   let vowelsCount = 0
