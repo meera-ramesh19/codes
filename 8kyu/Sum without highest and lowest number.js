@@ -20,8 +20,12 @@ I have created other katas. Have a look if you like coding and challenges.
 FUNDAMENTALSBASIC LANGUAGE FEATURES
 
 
+function sumArray(arr) {
+if (arr===null || arr.length < 2  ||arr===NaN) return 0
+ return arr.reduce((a,c)=>a+c,0)-Math.max(...arr)-Math.min(...arr);
 
-const sum=arr=>arr.reduce((a,c)=>a+c)-Math.max(...arr)-Math.min(...arr);
+}
+//const sum=arr=>arr.reduce((a,c)=>a+c)-Math.max(...arr)-Math.min(...arr);
 
 
 or
