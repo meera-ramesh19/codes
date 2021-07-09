@@ -10,3 +10,4 @@ FUNDAMENTALSSTRINGSNUMBERSARRAYS
 function sumMix(x){
   return  x.reduce((acc,val)=> (typeof val===Number?acc+=val:acc+=Number(val)),0)
 }
+const sumAll = x=> x.reduce((a,c)=>+a + +c)
