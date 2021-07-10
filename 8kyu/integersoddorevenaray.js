@@ -24,5 +24,10 @@ function sumOddOrEven (arr) {
 // confirm if the sum is odd or even
 return (sum%2 == 0) ? "even":"odd"
 //return string of "even" or "odd"
+}
 
+const oddOrEven = function(arr){
+return arr.reduce((acc, cur)=> acc+cur, 0 )%2 ? "odd":"even"; 
+ //any value other than 0 is truthy
+}
 
