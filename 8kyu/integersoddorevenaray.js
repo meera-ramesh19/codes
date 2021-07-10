@@ -28,6 +28,6 @@ return (sum%2 == 0) ? "even":"odd"
 
 const oddOrEven = function(arr){
 return arr.reduce((acc, cur)=> acc+cur, 0 )%2 ? "odd":"even"; 
- //any value other than 0 is truthy
+ //any value other than 0 is truthy,only 0 is false rest is true
 }
 
